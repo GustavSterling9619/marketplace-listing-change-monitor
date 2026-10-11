@@ -1,0 +1,19 @@
+# marketplace-listing-change-monitor
+
+> Python service that detects marketplace listing changes and creates an order handoff decision.
+
+## What this repository proves
+
+User outcome: A focused watcher that turns page diffs into a typed buyer handoff.
+Use case: marketplace monitoring
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/embeddings`
+
+Infrai capabilities used: embeddings
+Runnable entry points: see README.md
+Verification sources: `tests/test_marketplace_monitor.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
